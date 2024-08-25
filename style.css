@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0, 1, 45);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+    background-color: rgb(0, 1, 45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 20px 0px;
+    z-index: 1;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items a{
+    max-width: 100px;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+.home{
+    /* background-color: tomato; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+}
+
+.home h1{
+    font-family: cursive;
+    
+}
+
+.details{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.details button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+.details button:hover{
+    border: 1px solid white;
+    transition: all 1.2s;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    animation: bordergrow 1s infinite;
+}
+
+.home2{
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.grp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grp a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+
+@keyframes bordergrow {
+    0%,100%{
+        border-bottom: 3px solid rgba(8, 255, 164, 0.647);
+    }
+    50%{
+        border-top: 3px solid rgb(21, 0, 255);
+    }
+    75%{
+        border-right: 3px solid rgb(243, 22, 129);
+    }
+    95%{
+        border: 3px solid rgb(227, 5, 5);
+    }
+    
+}
+
+
+.details h1{
+    color: black;
+}
+.home img{
+    max-width: 400px;
+    max-height: 400px;
+    border-radius: 50%;
+}
+
+
+
+
+.education{
+    display: flex;
+    flex-direction: column;
+}
+
+.one{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 0px;
+}
+.one img{
+    width: 160px;
+    height: 130px;
+}
+.deta{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    width: 500px;
+}
+
+.g{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bu{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.bu button{
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill{
+    background-color: aliceblue;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hide{
+    display: none;
+}
+
+
+.menu{
+    color: black;
+    background-color: rgb(100, 75, 75);
+    color: wheat;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.tags{
+    flex-grow: 1;
+    padding: 20px;
+}
+.tg{
+    cursor: pointer;
+}
+.tags button{
+    margin: 10px;
+    background-color: tomato;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+
+.active{
+    background-color: tomato;
+    width: 80%;
+    padding: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.contact{
+    margin: 0px 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.message form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.message form input,textarea{
+    font-size: 14px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.sub{
+    cursor: pointer;
+}
+
+.address{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.si a{
+    text-decoration: none;
+    color: white;
+}
+.si{
+    display: flex;
+    gap: 30px;
+}
+
+
+footer{
+    margin-bottom: 30px;
+    margin-top: 130px;
+    text-align: center;
+}
+
+@media screen and (min-width:320px) {
+    nav{
+        gap: 30px;
+    }
+    .items a{
+        
+    padding: 0px 5px;
+        font-size: 12px;
+    }
+    .content{
+        margin-top: 150px;
+    }
+    .details{
+        font-size: 10px;
+    }
+    .home img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .grp h3{
+        font-size: small;
+    }
+    .grp a{
+        font-size: 30px;
+    }
+    .one img{
+        width: 110px;
+        height: 70px;
+    }
+    .deta{
+        font-size: 10px;
+        width: 100px;
+    }
+    .bu button{
+        width: 100px;
+        height: 25px;
+    }
+    .skill{
+        width: 250px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .menu{
+        font-size: x-small;
+        padding: 10px;
+        gap: 5px;
+        border-radius: 5px;
+    }
+    .menu h3{
+        text-align: center;
+    }
+    
+    .tags{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 15px;
+        overflow: scroll;
+    }
+    .tags button{
+        margin: 10px;
+        width: 68px;
+        font-size: small;
+        height: 30px;
+    }
+
+
+    .contact{
+        margin: 0;
+    }
+    .message form input,textarea{
+        font-size: 10px;
+        /* padding: 20px 10px; */
+        width: 200px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    .address{
+        font-size: 15px;
+        gap: 10px;
+    }
+   
+}
+
+@media screen and (min-width:425px){
+    .content{
+        margin-top: 100px;
+    }
+    .home img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .details{
+        font-size: 11px;
+    }
+    .grp h3{
+        font-size: small;
+    }
+    .grp a{
+        font-size: 30px;
+    }
+    .one img{
+        width: 130px;
+        height: 90px;
+    }
+    .deta{
+        font-size: 14px;
+        width: 200px;
+    }
+    .bu button{
+        width: 100px;
+        height: 25px;
+    }
+    .skill{
+        width: 340px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .menu{
+        font-size: small;
+    }
+    
+    .tags{
+        flex-grow: 1;
+        padding: 10px;
+        overflow: auto;
+    }
+    .tags button{
+        margin: 10px;
+        width: 100px;
+        font-size: small;
+        height: 30px;
+    }
+    .address{
+        font-size: 17px;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .items a{
+        /* padding: 0px 20px; */
+        font-size: 14px;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .home img{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .details{
+        font-size: 14px;
+    }
+    .grp h3{
+        font-size: medium;
+    }
+    .grp a{
+        font-size: 55px;
+    }
+    .one img{
+        width: 130px;
+        height: 90px;
+    }
+    .deta{
+        font-size: 20px;
+        width: 400px;
+    }
+    .bu button{
+        width: 100px;
+        height: 25px;
+    }
+    .skill{
+        width: 600px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .menu{
+        font-size: small;
+    }
+    
+    .tags{
+        display: block;
+        flex-grow: 1;
+        padding: 20px;
+    }
+    .tags button{
+        margin: 10px;
+        width: 100px;
+        font-size: small;
+        height: 30px;
+    }
+    .message form input,textarea{
+        font-size: 13px;
+        width: 200px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    .address{
+        font-size: 20px;
+        gap: 10px;
+    }
+    
+}
+
+
+@media screen and (min-width:1024px) {
+    .items a{
+        padding: 0px 20px;
+        font-size: 16px;
+    }
+    .content{
+        margin-top: 100px;
+    }
+    .home{
+        height: 80vh;
+    }
+    .home img{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
+    .details{
+        font-size: 16px;
+    }
+    .grp a{
+        font-size: 60px;
+    }
+    .one img{
+        width: 160px;
+        height: 120px;
+    }
+    .deta{
+        font-size: 20px;
+        width: 400px;
+    }
+    .bu button{
+        width: 150px;
+        height: 30px;
+    }
+    .message form input,textarea{
+        font-size: 10px;
+        /* padding: 20px 10px; */
+        width: 400px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+    .address{
+        font-size: 25px;
+        gap: 10px;
+    }
+}
