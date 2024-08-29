@@ -408,7 +408,8 @@ footer{
         font-size: 10px;
     }
     .details p{
-        width: 300px;
+        font-size: 12px;
+        width: 270px;
     }
     .home img{
         width: 200px;
@@ -497,7 +498,8 @@ footer{
         font-size: 11px;
     }
     .details p{
-        width: 400px;
+        font-size: 12px;
+        width: 350px;
     }
     .grp h3{
         font-size: small;
@@ -550,7 +552,7 @@ footer{
     
     .mobile{
         display: block;
-        margin-right: -40px;
+        margin-right: 40px;
     }
     nav .items{
         transition: all 2s;
