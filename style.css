@@ -42,6 +42,17 @@ nav{
     font-size: 20px;
 }
 
+.mobile{
+    display: none;
+    width: 40px;
+    height: 25px;
+}
+
+.mobile img{
+    width: 100%;
+}
+
+
 .content{
     margin-top: 50px;
 }
@@ -71,6 +82,10 @@ nav{
 .home h1{
     font-family: cursive;
     
+}
+#text-change{
+    color: rgb(0, 0, 255);
+    font-weight: 900;
 }
 
 .details{
@@ -295,45 +310,71 @@ nav{
 
 .projects{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flame{
+    background-color: red;
+    width: 1000px;
+}
+
+.projects h2{
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.project button{
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 0px 10px;
+    background-color: black;
+    color: white;
+}
+
+.flame{
+    display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
 
-.slider{
+.project{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    padding-bottom: 20px;
-}
-.silde{
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 500px;
-    height: 450px;
+    text-align: center;
     gap: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: white;
     color: black;
-    overflow: auto;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(rgb(255, 97, 97), rgb(255, 135, 135), rgb(255, 122, 122), 0.6);
+    margin: 20px;
 }
-.silde button{
-    min-width: 200px;
-    min-height: 30px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    margin: 5px;
-    background-color: aqua;
-}
-.gro{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.silde img{
+.project img{
     width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.btns{
+    display: flex;
+}
+.btns:nth-child(1){
+    flex-grow: 1;
 }
 
 
@@ -353,7 +394,7 @@ footer{
         font-size: 12px;
     }
     .content{
-        margin-top: 150px;
+        margin-top: 80px;
     }
     .details{
         font-size: 10px;
@@ -495,6 +536,17 @@ footer{
     footer{
         margin-bottom: 30px;
         margin-top: 60px;
+    }
+}
+@media screen and (max-width:425px) {
+    
+    .mobile{
+        display: block;
+        margin-right: -40px;
+    }
+    nav .items{
+        transition: all 2s;
+        display: none;
     }
 }
 

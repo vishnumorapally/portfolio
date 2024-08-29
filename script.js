@@ -115,3 +115,24 @@ tags.forEach((e)=>{
 
 
 
+// nav bar
+
+const closebtn = document.getElementById("close");
+closebtn.style.display = "none";
+
+const menubtn = document.getElementById("menu");
+
+const items = document.getElementById("it")
+
+
+menubtn.addEventListener("click",()=>{
+    menubtn.style.display = "none";
+    closebtn.style.display = "block";
+    items.style.display = "block";
+})
+
+closebtn.addEventListener("click",()=>{
+    menubtn.style.display = "block";
+    closebtn.style.display = "none";
+    items.style.display = "none";
+})
