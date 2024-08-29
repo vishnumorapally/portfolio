@@ -75,7 +75,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 60vh;
+    height: 80vh;
     
 }
 
@@ -434,6 +434,9 @@ nav{
     background-color: rgb(0, 1, 45);
     color: white;
     border-radius: 10px;
+    border: none;
+    outline: none;
+
 }
 
 .tag button{
@@ -446,12 +449,25 @@ nav{
     font-size: 30px;
     position: absolute;
     transition: all 2s;
+    display: flex;
+    align-items: center;
+}
+.mobi p{
+    color: rgb(0, 1, 45);
+}
+.text{
+    position: absolute;
+    color: red;
+    left: 50%;
+    font-weight: 800;
+    margin-top: 8px;
+    display: none;
 }
 
 #close-skils{
     color: white;
+    display: none;
 }
-
 footer{
     margin-bottom: 30px;
     margin-top: 130px;
@@ -472,6 +488,7 @@ footer{
     }
     .details{
         font-size: 10px;
+        gap: 40px;
     }
     .details p{
         font-size: 12px;
@@ -554,6 +571,20 @@ footer{
         margin-bottom: 30px;
         margin-top: 50px;
     }
+    .oo{
+        width: 60vw;
+    }
+    .tag{
+        margin: 10px;
+    }
+}
+@media screen and (min-width:375px) {
+    .oo{
+        width: 80vw;
+    }
+    .tag{
+        margin: 10px;
+    }
 }
 
 @media screen and (min-width:425px){
@@ -634,11 +665,31 @@ footer{
 
 @media screen and (max-width:750px) {
     
-    .mobi{
-        display: block;
+    
+    .skill-nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 80px;
+        cursor: pointer;
+    }
+    .mobi{  
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
     }
     .skill-nav ul{
         display: none;
+    }
+    .tag{
+        margin-top: 30px;
+    }
+    .mobi p{
+        font-size: medium;
+        display: block
+        text-align: center;
     }
     
 }

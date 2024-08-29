@@ -145,25 +145,39 @@ const filter = document.getElementById("filter")
 const closefilter = document.getElementById("close-skils")
 const menuskills = document.getElementById("menu-skills")
 const options = document.querySelectorAll(".tg")
+const heading = document.getElementById("heading")
 
-closefilter.style.display = "none";
+
 
 filter.addEventListener("click",()=>{
     menuskills.style.display = "block";
     closefilter.style.display = "block";
     filter.style.display = "none";
+    heading.style.display = "none";
     options.forEach((op)=>{
-        op.addEventListener("click",()=>{
-            menuskills.style.display = "none";
-            closefilter.style.display = "none";
-            filter.style.display = "block";
-        })
+    op.addEventListener("click",()=>{
+        te=""
+        let opte = op.getAttribute("id")
+        if(opte==="all") te="All";
+        else if(opte==="web") te="Web Development";
+        else if(opte==="program") te="Programming apps";
+        else if(opte==="operating") te="Opreating Systems";
+        else if(opte==="tools") te="Tools";
+        else te="Databases"
+        menuskills.style.display = "none";
+        closefilter.style.display = "none";
+        filter.style.display = "block";
+        heading.innerHTML = te;
+        heading.style.display = "block";
+        
     })
+})
 })
 
 closefilter.addEventListener("click",()=>{
     menuskills.style.display = "none";
     closefilter.style.display = "none";
     filter.style.display = "block";
+    heading.style.display = "block";
 })
 
