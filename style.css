@@ -478,17 +478,16 @@ footer{
     nav{
         gap: 30px;
     }
-    .items a{
-        
-    padding: 0px 5px;
+    .items a{    
+        padding: 0px 5px;
         font-size: 12px;
     }
     .content{
-        margin-top: 80px;
+        margin-top: 50px;
     }
     .details{
-        font-size: 10px;
-        gap: 40px;
+        font-size: 8px;
+        gap: 30px;
     }
     .details p{
         font-size: 12px;
@@ -539,6 +538,19 @@ footer{
         padding: 15px;
         overflow: scroll;
     }
+    .tags::-webkit-scrollbar{
+        width: 1px;
+    }
+    .tags::-webkit-scrollbar-thumb{
+        width: 10px;
+        border-radius: 20px;
+        background-color: orange;
+        border: 3px solid orange;
+    }
+    .tags::-webkit-scrollbar-track{
+        color: red;
+        background: red;
+    }
     .tags button{
         margin: 10px;
         width: 68px;
@@ -575,8 +587,12 @@ footer{
         width: 60vw;
     }
     .tag{
-        margin: 10px;
+        /* margin: 10px;     */
     }
+
+    
+
+
 }
 @media screen and (min-width:375px) {
     .oo{
@@ -649,6 +665,10 @@ footer{
         margin-bottom: 30px;
         margin-top: 60px;
     }
+    .skill-nav ul li{
+        width: 350px;
+        height: 80px;
+    }
 }
 @media screen and (max-width:425px) {
     
@@ -666,14 +686,7 @@ footer{
 @media screen and (max-width:750px) {
     
     
-    .skill-nav ul li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 80px;
-        cursor: pointer;
-    }
+    
     .mobi{  
         width: 300px;
         display: flex;
@@ -688,8 +701,7 @@ footer{
     }
     .mobi p{
         font-size: medium;
-        display: block
-        text-align: center;
+        display: block;
     }
     
 }
@@ -765,6 +777,11 @@ footer{
     .mobi{
         display: none;
     }
+    .skill-nav ul li{
+        width: 200px;
+        height: 80px;
+    }
+
 }
 
 
