@@ -288,7 +288,13 @@ nav{
     border: none;
     outline: none;
 }
+.message textarea{
+    height: 100px;
+}
 .sub{
+    padding: 0px 0px;
+    background-color: tomato;
+    color: wheat;
     cursor: pointer;
 }
 
@@ -315,7 +321,7 @@ nav{
 }
 
 .flame{
-    background-color: red;
+    /* background-color: red; */
     width: 1000px;
 }
 
@@ -401,6 +407,9 @@ footer{
     }
     .details p{
         width: 300px;
+    }
+    .home{
+        height: 70vh;
     }
     .home img{
         width: 200px;
