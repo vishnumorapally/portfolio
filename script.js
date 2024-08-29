@@ -1,4 +1,4 @@
-const menu = document.querySelector(".tags")
+const menu = document.querySelector(".tag")
 
 
 const tags = document.querySelectorAll(".tg")
@@ -136,3 +136,34 @@ closebtn.addEventListener("click",()=>{
     closebtn.style.display = "none";
     items.style.display = "none";
 })
+
+
+
+// sort skill
+
+const filter = document.getElementById("filter")
+const closefilter = document.getElementById("close-skils")
+const menuskills = document.getElementById("menu-skills")
+const options = document.querySelectorAll(".tg")
+
+closefilter.style.display = "none";
+
+filter.addEventListener("click",()=>{
+    menuskills.style.display = "block";
+    closefilter.style.display = "block";
+    filter.style.display = "none";
+    options.forEach((op)=>{
+        op.addEventListener("click",()=>{
+            menuskills.style.display = "none";
+            closefilter.style.display = "none";
+            filter.style.display = "block";
+        })
+    })
+})
+
+closefilter.addEventListener("click",()=>{
+    menuskills.style.display = "none";
+    closefilter.style.display = "none";
+    filter.style.display = "block";
+})
+

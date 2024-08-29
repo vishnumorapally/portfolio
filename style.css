@@ -89,16 +89,21 @@ nav{
 }
 
 .details{
-    font-size: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 50px;
+    gap: 80px;
     padding: 10px;
 }
+.details h1{
+    font-size: 40px;
+}
 
+.details p{
+    font-size: 30px;
+}
 .details button{
     height: 50px;
     width: 150px;
@@ -262,11 +267,7 @@ nav{
 }
 
 .active{
-    background-color: tomato;
-    width: 80%;
-    padding: 20px;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+    color: tomato;
 }
 
 .contact{
@@ -354,6 +355,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 800px;
     overflow: hidden;
 }
 
@@ -385,6 +387,70 @@ nav{
     flex-grow: 1;
 }
 
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.oo{
+    background-color: aliceblue;
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+.skill-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;   
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 80px;
+    cursor: pointer;
+}
+.tag{
+    
+    margin:30px;
+    height: 400px;
+    overflow: auto;
+    gap: 30px;
+}
+
+.tag button{
+    margin: 10px;
+    background-color: rgb(0, 1, 45);
+    color: white;
+    border-radius: 10px;
+}
+
+.tag button{
+    height: 30px;
+    width: 100px;
+}
+.mobi{
+    display: none;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    transition: all 2s;
+}
+
+#close-skils{
+    color: white;
+}
 
 footer{
     margin-bottom: 30px;
@@ -479,6 +545,11 @@ footer{
         font-size: 15px;
         gap: 10px;
     }
+
+    .project{
+        height: 250px;
+    }
+
     footer{
         margin-bottom: 30px;
         margin-top: 50px;
@@ -560,6 +631,18 @@ footer{
     }
 }
 
+
+@media screen and (max-width:750px) {
+    
+    .mobi{
+        display: block;
+    }
+    .skill-nav ul{
+        display: none;
+    }
+    
+}
+
 @media screen and (min-width:768px) {
     .items a{
         /* padding: 0px 20px; */
@@ -628,7 +711,9 @@ footer{
         font-size: 20px;
         gap: 10px;
     }
-    
+    .mobi{
+        display: none;
+    }
 }
 
 
